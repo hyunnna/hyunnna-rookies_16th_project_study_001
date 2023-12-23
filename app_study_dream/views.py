@@ -172,7 +172,7 @@ def write_post(request):
         time_difference_minutes = time_difference.total_seconds() / 60
 
         if time_difference_minutes < 1:
-            time_difference_minutes = 0
+            time_difference_minutes = 10
         # 초를 시간, 분, 초로 변환
         hours, minutes = divmod(time_difference_minutes, 60)
 
